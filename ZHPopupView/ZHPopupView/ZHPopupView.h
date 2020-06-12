@@ -17,6 +17,8 @@ typedef enum {
 
 @interface ZHPopupView : UIView
 
+@property(nonatomic, strong) UILabel *headTitleLbl;
+@property(nonatomic, strong) UITextView *contentTextView;
 
 @property(nonatomic, strong) NSString *headTitle;// Title string
 @property(nonatomic, strong) NSString *content; // Content String

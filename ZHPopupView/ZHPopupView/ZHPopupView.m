@@ -36,9 +36,9 @@
 }
 
 @property(nonatomic, strong) UIImageView *headIconImgView;
-@property(nonatomic, strong) UILabel *headTitleLbl;
+//@property(nonatomic, strong) UILabel *headTitleLbl;
+//@property(nonatomic, strong) UITextView *contentTextView;
 
-@property(nonatomic, strong) UITextView *contentTextView;
 @property(nonatomic, strong) UIView *container;
 @property(nonatomic, weak) UIView *parentView;
 @property(nonatomic, assign) ZHPopupViewBackgroundType backgroundType;
