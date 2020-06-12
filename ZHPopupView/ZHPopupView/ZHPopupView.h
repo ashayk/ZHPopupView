@@ -4,7 +4,7 @@
 //
 //  Created by zhhlmr on 16/4/25.
 //  Copyright © 2016年 zhhlmr. All rights reserved.
-//
+//  ashayk fork
 
 #import <UIKit/UIKit.h>
 
@@ -15,7 +15,7 @@ typedef enum {
 
 } ZHPopupViewBackgroundType;
 
-@interface ZHPopupView : UIView   
+@interface ZHPopupView : UIView
 
 @property(nonatomic, strong) UILabel *headTitleLbl;
 @property(nonatomic, strong) UITextView *contentTextView;
