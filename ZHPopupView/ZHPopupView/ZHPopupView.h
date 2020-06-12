@@ -15,7 +15,7 @@ typedef enum {
 
 } ZHPopupViewBackgroundType;
 
-@interface ZHPopupView : UIView
+@interface ZHPopupView : UIView   
 
 @property(nonatomic, strong) UILabel *headTitleLbl;
 @property(nonatomic, strong) UITextView *contentTextView;
