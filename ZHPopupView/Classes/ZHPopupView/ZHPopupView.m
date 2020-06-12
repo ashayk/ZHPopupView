@@ -105,7 +105,7 @@
                   confirmBtnTextColor:(UIColor *)confirmBtnTextColor
                     otherBtnTextColor:(UIColor *)otherBtnTextColor
                    buttonPressedBlock:(void (^)(NSInteger btnIdx))buttonPressedBlock
-                   viewDismissedBlock:(void (^)())viewDismissedBlock
+                   viewDismissedBlock:(void (^)(void))viewDismissedBlock
 {
     ZHPopupView *popView = [ZHPopupView popUpDialogViewInView:view
                                                       iconImg:iconImg
@@ -152,7 +152,7 @@
                        confirmBtnTextColor:(UIColor *)confirmBtnTextColor
                          otherBtnTextColor:(UIColor *)otherBtnTextColor
                         buttonPressedBlock:(void (^)(NSInteger btnIdx))buttonPressedBlock
-                        viewDismissedBlock:(void (^)())viewDismissedBlock
+                        viewDismissedBlock:(void (^)(void))viewDismissedBlock
 {
     ZHPopupView *popView = [ZHPopupView popupNormalAlertViewInView:view
                                                    backgroundStyle:backgroundType
@@ -522,10 +522,10 @@
     [self.layer setOpacity:0.0f];
     [_container.layer setOpacity:0.0f];
     
-    
+    __weak __typeof(self) wself = self;
     [UIView animateWithDuration:0.2f animations:^{
-        [self.layer setOpacity:1.0f];
-        [_container.layer setOpacity:1.0f];
+        [wself.layer setOpacity:1.0f];
+        [wself.container.layer setOpacity:1.0f];
     }                completion:^(BOOL finished) {
         
         
