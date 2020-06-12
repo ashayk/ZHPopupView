@@ -30,7 +30,6 @@
 #define kScreen_Height [UIScreen mainScreen].bounds.size.height
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 
-
 @interface ZHPopupView () {
     
 }

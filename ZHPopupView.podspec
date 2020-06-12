@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = "Simple iOS Pop up View to display alert or dialog, with blur/normal fade in display mode"
 
-  s.homepage         = "https://github.com/zhhlmr/ZHPopupView"
+  s.homepage         = "https://github.com/ashayk/ZHPopupView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "zhhlmr" => "zhouhan199132@gmail.com" }
-  s.source           = { :git => "https://github.com/zhhlmr/ZHPopupView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ashayk/ZHPopupView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
